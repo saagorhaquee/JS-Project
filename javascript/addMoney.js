@@ -1,3 +1,4 @@
+document.getElementById('cashout-section').style.display="none"
 document.getElementById("add-money").addEventListener('click', function (event) {
     event.preventDefault;
     const amount = document.getElementById("amount").value;
@@ -16,4 +17,13 @@ document.getElementById("add-money").addEventListener('click', function (event) 
         alert('tik nai')
     }
 
+})
+
+document.getElementById('add-money-btn').addEventListener("click", function(){
+    document.getElementById('cashout-section').style.display="none"   
+    document.getElementById('add-money-section').style.display="block" 
+})
+document.getElementById('cashout-btn').addEventListener("click", function(){
+    document.getElementById('cashout-section').style.display="block"   
+    document.getElementById('add-money-section').style.display="none" 
 })

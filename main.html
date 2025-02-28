@@ -29,11 +29,11 @@
             <h1 class="text-2xl font-bold mb-2">🔥 Welcome to Payooo!</h1>
             <p>Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
             <div class="cards grid grid-cols-3 mt-14 gap-2 p-2">
-                <div class="box border p-4 text-center rounded-sm">
+                <div id="add-money-btn" class="box border p-4 text-center rounded-sm">
                     <img class="w-8 mx-auto" src="./assets/wallet1.png" alt="">
                     <h3>Add money</h3>
                 </div>
-                <div class="box border p-4 text-center rounded-sm">
+                <div id="cashout-btn" class="box border p-4 text-center rounded-sm">
                     <img class="w-8 mx-auto" src="./assets/money1.png" alt="">
                     <h3>Cash out</h3>
                 </div>
@@ -56,7 +56,7 @@
 
             </div>
         </section>
-        <section>
+        <section id="add-money-section">
             <h2>Add Money</h2>
             <div class="">
                 <div class="hero-content flex-col lg:flex-row-reverse">
@@ -88,7 +88,40 @@
               </div>
         </section>
 
+        <section id="cashout-section">
+            <h2>Cashout</h2>
+            <div class="">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                  
+                  <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
+                    <div class="card-body">
+                        <legend>Select Bank</legend>
+                        <select class="select">
+                            <option disabled selected>Select A Bank</option>
+                            <option value="Bikash">Bikash</option>
+                            <option value="Nagad">Nagad</option>
+                            <option value="DBBL">DBBL</option>
+                          </select>
+                          <fieldset class="fieldset">
+                            <label class="fieldset-label">Amount</label>
+                            <input  id="amount" type="number" class="input" placeholder="type your amount" />
+                            <label class="fieldset-label">Account Number</label>
+                            <input  id="account-number" type="number" class="input" placeholder="your 11 digit account number" />
+                            <label class="fieldset-label">Pin</label>
+                            <input id="pin" type="text" class="input" placeholder="type pin" />
+                            <div><a class="link link-hover">Forgot pin?</a></div>
+                           
+                          </fieldset>
+                        <button id="cash-out" class="btn btn-neutral mt-4 bg-blue-700 border-none">Add money</button>
+                      </fieldset>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+
     </section>
+    <script src="./javascript/cashoutBtn.js"></script>
 <script src="./javascript/addMoney.js"></script>
 </body>
 </html>
