@@ -1,6 +1,6 @@
 document.getElementById("cash-out").addEventListener('click', function (event) {
     event.preventDefault;
-    const amount = document.getElementById("amount").value;
+    const amount = document.getElementById("amount-btn").value;
     const convertedAmount = parseFloat(amount);
     const balance = document.getElementById("balance").innerText
     const convertedBalance = parseFloat(balance);
